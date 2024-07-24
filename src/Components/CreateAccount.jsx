@@ -16,7 +16,7 @@ const SignUp = () => {
           alt="Astronaut"
         />
         {/* Text Overlay */}
-        <div className="absolute bottom-0 left-0 right-0  text-white py-4 px-6">
+        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 rounded-xl text-white py-4 px-6">
           <p className="text-lg font-mono font-extrabold">
             Explore new games and enjoy with your friends
           </p>
@@ -95,7 +95,7 @@ const SignUp = () => {
           </div>
           <div className="mt-4">
             <p>
-              Already have an account?{" "}
+              Already have an account?
               <button className="cursor-pointer text-blue-600">Sign In</button>
             </p>
           </div>
