@@ -1,5 +1,7 @@
 import React from "react";
 import { IoGameController } from "react-icons/io5";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa6";
 //import AstronautImage from "./assets/Astronaut.jpeg"; // Assuming you've imported the image correctly
 
 const SignUp = () => {
@@ -9,7 +11,7 @@ const SignUp = () => {
       <div className="relative w-full md:w-96">
         {/* Background Image */}
         <img
-          src="src/assets/Astronaut.jpeg"
+          src="src/assets/Astro.jpeg"
           className="w-full h-full rounded-2xl"
           alt="Astronaut"
         />
@@ -29,15 +31,15 @@ const SignUp = () => {
       </div>
 
       {/* Right Section with Sign Up Form */}
-      <div className="flex flex-col w-full md:w-96">
+      <div className="flex flex-col">
         <h1 className="text-4xl pb-4 font-extrabold">CREATE AN ACCOUNT</h1>
         <div className="space-y-4">
-          <div className="space-x-3 pb-4">
-            <button className="bg-slate-950 text-white rounded-3xl px-4 py-2">
-              SIGN UP WITH GOOGLE
+          <div className="space-x-4 items-center pb-4 flex flex-row">
+            <button className="bg-slate-950 text-white rounded-3xl px-4 py-2 flex items-center ">
+            <FcGoogle />SIGN UP WITH GOOGLE
             </button>
-            <button className="bg-gray-600 text-white rounded-3xl px-4 py-2">
-              WITH FACEBOOK
+            <button className="bg-gray-600 text-white rounded-3xl px-4 py-2 flex items-center">
+            <FaFacebook />WITH FACEBOOK
             </button>
           </div>
           <ul className="space-y-4">
@@ -48,7 +50,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="name"
-                className="bg-slate-300 p-2 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4"
               />
             </li>
             <li className="flex flex-col">
@@ -58,7 +60,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="email"
-                className="bg-slate-300 p-2 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4"
               />
             </li>
             <li className="flex flex-col">
@@ -68,7 +70,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="username"
-                className="bg-slate-300 p-2 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4"
               />
             </li>
             <li className="flex flex-col">
@@ -78,7 +80,7 @@ const SignUp = () => {
               <input
                 type="password"
                 id="password"
-                className="bg-slate-300 p-2 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4"
               />
             </li>
           </ul>
