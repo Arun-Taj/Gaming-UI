@@ -26,8 +26,8 @@ const Sidebar = () => {
         <a href="#"className="hover:text-gray-400">Achievement</a>
         </li>
       </ul>
-      <div className='flex flex-col'>
-      <p className=" font-bold mt-10 mb-4 pr-32">Installed Games</p>
+      
+      <p className=" font-bold mt-10 mb-4 pr-32 items-center">Installed Games</p>
       <ul className=''>
         <li className="mb-2 flex items-center space-x-1">
         <img
@@ -65,7 +65,7 @@ const Sidebar = () => {
         className="w-8 h-8 rounded-full  border-gray-300"
       />
           <a href="#" className="hover:text-gray-400">Rocket League</a></li>
-      </ul></div>
+      </ul>
     </div>
   );
 }

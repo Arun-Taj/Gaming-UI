@@ -1,6 +1,7 @@
 import React from 'react';
 import GameCard from './GameCard';
 import { FaStar } from "react-icons/fa";
+import { FaFirefox } from "react-icons/fa";
 
 
 
@@ -52,7 +53,7 @@ const Newgames = [
 
 
       <div className='flex items-center mb-6 mt-10'>
-        <FaStar className='text-red-500 mr-2' size={30} />
+        <FaFirefox className='text-red-500 mr-2' size={30} />
         <h2 className="text-2xl font-bold">New Release</h2>
       </div>
       <div className="grid grid-cols-4 gap-4 ">

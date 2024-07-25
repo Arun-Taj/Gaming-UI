@@ -18,7 +18,7 @@ const friends = [
 const FriendsList = () => {
   return (
     <div className=" bg-gray-800 text-white p-4">
-      <div className='flex justify-between text-4xl'>
+      <div className='flex justify-between '>
         <p className=" font-bold mb-6 ">Online friends</p>
       </div>
       
