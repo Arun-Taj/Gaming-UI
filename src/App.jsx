@@ -13,14 +13,15 @@ const App = () => {
 
     <div className=''>
     <Navbar/>
-    <div className='flex flex-row'>
+    <div className='flex flex-row '>
     <Sidebar/>
-    <div className='w-full'>
+    <div className='w-fit'>
     <MainContent />
     </div>
     <FriendsList/>
     </div>
     </div>
+  
 
     {/* <div>
       <HomePage/>

@@ -18,19 +18,31 @@ const friends = [
 const FriendsList = () => {
   return (
     <div className=" bg-gray-800 text-white p-4">
-      <h2 className="text-2xl font-bold mb-6">Online friends</h2>
+      <div className='flex justify-between text-4xl'>
+        <p className=" font-bold mb-6 ">Online friends</p>
+      </div>
+      
       <ul>
         {friends.filter(friend => friend.online).map((friend, index) => (
           <li key={index} className="mb-4 flex items-center">
+            <img
+        src="src/assetsUserDashBoard/Fc24.jpeg" 
+        alt="Profile"
+        className="w-8 h-8 rounded-full  border-gray-300"
+      />
             <span className="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
             {friend.name}
           </li>
         ))}
       </ul>
-      <h2 className="text-2xl font-bold mt-6 mb-4">Offline friends</h2>
+      <p className=" font-bold mt-6 mb-4">Offline friends</p>
       <ul>
         {friends.filter(friend => !friend.online).map((friend, index) => (
-          <li key={index} className="mb-4 flex items-center">
+          <li key={index} className="mb-4 flex items-center"><img
+          src="src/assetsUserDashBoard/Fc24.jpeg" 
+          alt="Profile"
+          className="w-8 h-8 rounded-full  border-gray-300"
+        />
             <span className="h-3 w-3 bg-red-500 rounded-full mr-2"></span>
             {friend.name}
           </li>
