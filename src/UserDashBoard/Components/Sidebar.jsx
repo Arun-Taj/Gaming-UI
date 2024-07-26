@@ -2,9 +2,15 @@ import React from 'react';
 import { RiHome2Line } from "react-icons/ri";
 import { TbBrowser } from "react-icons/tb";
 import { MdLibraryAdd, MdHistory, MdSendAndArchive } from "react-icons/md";
+import { createBrowserRouter } from 'react-router-dom';
+import Achivements from './MenuItems/Achivements';
+import { Link } from 'react-router-dom';
+
 
 const Sidebar = () => {
+  
   return (
+    <>
     <div className="dark:bg-gray-800 p-4 text-white w-full lg:w-64">
       <h2 className="text-2xl font-bold mb-6">Menu</h2>
       <ul>
@@ -24,10 +30,11 @@ const Sidebar = () => {
           <MdHistory />
           <a href="#" className="hover:text-gray-400">History</a>
         </li>
+        
         <li className="mb-4 flex items-center space-x-2">
           <MdSendAndArchive />
-          <a href="#" className="hover:text-gray-400">Achievement</a>
-        </li>
+         Achivements
+        </li> 
       </ul>
       
       <p className="font-bold mt-10 mb-4">Installed Games</p>
@@ -73,7 +80,7 @@ const Sidebar = () => {
           <a href="#" className="hover:text-gray-400">Rocket League</a>
         </li>
       </ul>
-    </div>
+    </div></>
   );
 }
 

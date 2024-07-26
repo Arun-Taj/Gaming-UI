@@ -7,30 +7,26 @@ import Sidebar from './UserDashBoard/Components/Sidebar'
 import MainContent from './UserDashBoard/Components/MainContent'
 import FriendsList from './UserDashBoard/Components/FriendList'
 import Complete from './UserDashBoard/Components/Complete'
+import Achivements from './UserDashBoard/Components/MenuItems/Achivements'
+// import { createBrowserRouter } from 'react-router-dom'
+
 
 const App = () => {
   return (
     <>
     {/* UserDashBoard */}
 
-    {/* <div className=''>
-    <Navbar/>
-    <div className='flex flex-row '>
-    <Sidebar/>
-    <div className='w-fit'>
-    <MainContent />
-    </div>
-    <FriendsList/>
-    </div>
-    </div> */}
+   <Complete/>
 
-      <Complete/>
+      {/* <Achivements/> */}
 
-    {/* <div>
-      <HomePage/>
-    <Signup/>
-    <SignIn/>
-    </div> */}
+      {/* SignUp Page and login page are in below */}
+
+    <div>
+      {/* <HomePage/> */}
+    {/* <Signup/> */}
+    {/* <SignIn/> */}
+    </div>
     </>
     
   )

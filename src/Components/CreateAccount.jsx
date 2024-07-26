@@ -50,7 +50,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="name"
-                className="bg-slate-300 p-3 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4 text-black"
               />
             </li>
             <li className="flex flex-col">
@@ -60,7 +60,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="email"
-                className="bg-slate-300 p-3 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4 text-black"
               />
             </li>
             <li className="flex flex-col">
@@ -70,7 +70,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="username"
-                className="bg-slate-300 p-3 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4 text-black"
               />
             </li>
             <li className="flex flex-col">
@@ -80,7 +80,7 @@ const SignUp = () => {
               <input
                 type="password"
                 id="password"
-                className="bg-slate-300 p-3 rounded-3xl pl-4"
+                className="bg-slate-300 p-3 rounded-3xl pl-4 text-black"
               />
             </li>
           </ul>

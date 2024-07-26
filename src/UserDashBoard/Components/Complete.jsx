@@ -5,11 +5,7 @@ import MainContent from "./MainContent";
 import FriendsList from "./FriendList";
 
 const Complete = () => {
-  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  // const toggleSidebar = () => {
-  //   setIsSidebarOpen(!isSidebarOpen);
-  // };
+ 
 
   return (
     <>
@@ -23,7 +19,7 @@ const Complete = () => {
           <FriendsList className="hidden lg:block lg:w-1/5" />
         </div>
       </div>
-    </>
+    </>     
   );
 };
 

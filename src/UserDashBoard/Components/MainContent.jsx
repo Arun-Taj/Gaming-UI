@@ -9,9 +9,7 @@ const MainContent = () => {
     { name: 'Pubg', image: 'src/assetsUserDashBoard/Pubg.jpeg', price: 'Free' },
     { name: 'FC 24', image: 'src/assetsUserDashBoard/Fc24.jpeg', price: 'Free' },
     { name: 'Fortnite', image: 'src/assetsUserDashBoard/Fortnite.jpeg', price: 'Free' },
-    // { name: 'Fall Guys', image: 'src/assetsUserDashBoard/FallGuys.jpeg', price: 'Free' },
-    // { name: 'NBA 2K', image: 'src/assetsUserDashBoard/NBA2k.jpeg', price: 'Free' },
-    // { name: 'College Football 25', image: 'src/assetsUserDashBoard/CollageFootball25.jpeg', price: 'Free' },
+    
   ];
   
   const Newgames = [
@@ -26,6 +24,7 @@ const MainContent = () => {
   ];
 
   return (
+    //Top Games
     <div className="dark:bg-gray-800 text-white p-6 w-full">
       <div className='flex items-center mb-6'>
         <FaStar className='text-red-500 mr-2' size={30} />
@@ -37,6 +36,8 @@ const MainContent = () => {
           <GameCard key={index} name={game.name} image={game.image} price={game.price} />
         ))}
       </div>
+
+      {/* New Release */}
 
       <div className='flex items-center mb-6 mt-10'>
         <FaFirefox className='text-red-500 mr-2' size={30} />
