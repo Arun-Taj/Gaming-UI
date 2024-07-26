@@ -6,12 +6,14 @@ import Navbar from './UserDashBoard/Components/Navbar'
 import Sidebar from './UserDashBoard/Components/Sidebar'
 import MainContent from './UserDashBoard/Components/MainContent'
 import FriendsList from './UserDashBoard/Components/FriendList'
+import Complete from './UserDashBoard/Components/Complete'
 
 const App = () => {
   return (
     <>
+    {/* UserDashBoard */}
 
-    <div className=''>
+    {/* <div className=''>
     <Navbar/>
     <div className='flex flex-row '>
     <Sidebar/>
@@ -20,8 +22,9 @@ const App = () => {
     </div>
     <FriendsList/>
     </div>
-    </div>
-  
+    </div> */}
+
+      <Complete/>
 
     {/* <div>
       <HomePage/>
