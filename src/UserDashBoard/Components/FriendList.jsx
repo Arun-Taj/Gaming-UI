@@ -31,7 +31,7 @@ const FriendsList = () => {
               className="w-8 h-8 rounded-full border-gray-300 mr-2"
             />
             <span className="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
-            <span className="text-xs sm:text-xl">{friend.name}</span>
+            <span className="text-sm sm:text-base">{friend.name}</span>
           </li>
         ))}
       </ul>
