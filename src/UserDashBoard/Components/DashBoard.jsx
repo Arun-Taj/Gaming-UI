@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 import FriendsList from "./FriendList";
 
-const Complete = () => {
+const DashBoard = () => {
  
 
   return (
@@ -23,4 +23,4 @@ const Complete = () => {
   );
 };
 
-export default Complete;
+export default DashBoard;

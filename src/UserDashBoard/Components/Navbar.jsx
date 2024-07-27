@@ -28,7 +28,7 @@ const Navbar = () => {
           <FaSearch className="absolute left-3 top-2.5 text-gray-400" />
         </div>
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-8 pr-6">
         <button onClick={toggleDarkMode} className="text-white">
           {darkMode ? <FaSun /> : <FaMoon />}
         </button>
