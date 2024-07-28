@@ -25,7 +25,7 @@ const MainContent = () => {
 
   return (
     //Top Games
-    <div className="dark:bg-gray-800 text-white p-6 w-full">
+    <div className="dark:bg-gray-800 bg-lightModeBg dark:text-white  text-black  p-6 w-full">
       <div className='flex items-center mb-6'>
         <FaStar className='text-red-500 mr-2' size={30} />
         <h2 className="text-2xl md:text-3xl font-bold">Top Games</h2>

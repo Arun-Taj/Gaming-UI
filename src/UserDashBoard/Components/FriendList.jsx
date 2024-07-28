@@ -17,7 +17,7 @@ const friends = [
 
 const FriendsList = () => {
   return (
-    <div className="dark:bg-gray-800 text-white p-4 sm:pl-6 md:pl-10  ">
+    <div className="dark:bg-gray-800 dark:text-white bg-lightModeBg text-black p-4 sm:pl-6 md:pl-10  ">
       <div className=''>
         <p className="text-sm sm:text-xl font-bold mb-6">Online friends</p>
       
