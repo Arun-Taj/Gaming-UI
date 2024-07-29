@@ -48,7 +48,8 @@ const FriendsList = () => {
             <span className="text-sm sm:text-base">{friend.name}</span>
           </li>
         ))}
-      </ul></div>
+      </ul>
+      </div>
     </div>
   );
 }
