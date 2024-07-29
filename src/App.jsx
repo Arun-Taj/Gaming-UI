@@ -11,7 +11,7 @@ import Achivements from './UserDashBoard/Components/MenuItems/Achivements';
 import Browser from './UserDashBoard/Components/MenuItems/Browser'
 import Library from './UserDashBoard/Components/MenuItems/Library'
 import History from './UserDashBoard/Components/MenuItems/History';
-import AddGames from './AdminDashBoard/Components/AddGames';
+//import AddGames from './AdminDashBoard/Components/AddGames';
 
 
 
@@ -34,7 +34,7 @@ const App = () => {
           <Route path='achivements' element={<Achivements />} />
         </Route>
         <Route path='adminuser' element={<User/>}/>
-        <Route path='addgames' element={<AddGames/>}/>
+        {/* <Route path='addgames' element={<AddGames/>}/> */}
       </Routes>
     </Router>
       
