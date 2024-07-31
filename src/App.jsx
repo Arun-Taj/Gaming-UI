@@ -4,15 +4,17 @@ import SignUp from './Components/SignUp';
 import SignIn from './Components/SignInPage';
 import DashBoard from './UserDashBoard/Components/DashBoard';
 import User from './AdminDashBoard/Components/User'
-import Sidebar from './UserDashBoard/Components/Sidebar';
+
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 import Store from './UserDashBoard/Components/MenuItems/Store'
-import Achivements from './UserDashBoard/Components/MenuItems/Achivements';
+import Achievements from './UserDashBoard/Components/MenuItems/Achievements';
 import Browser from './UserDashBoard/Components/MenuItems/Browser'
 import Library from './UserDashBoard/Components/MenuItems/Library'
 import History from './UserDashBoard/Components/MenuItems/History';
 import AddGames from './AdminDashBoard/Components/AddGames';
-
+import ErrorPage from './Components/ErrorPage';
+import Calendar from './AdminDashBoard/Components/Calendar';
+import Sidebar from './UserDashBoard/Components/Sidebar';
 
 
 
@@ -20,8 +22,10 @@ import AddGames from './AdminDashBoard/Components/AddGames';
 const App = () => {
   return (
     <>
+   
     
     <Router>
+      
       
       <Routes>
         <Route path='/signup' element={<SignUp/>}/>
@@ -31,11 +35,16 @@ const App = () => {
           <Route path='browse' element={<Browser />} />
           <Route path='library' element={<Library />} />
           <Route path='history' element={<History />} />
-          <Route path='achivements' element={<Achivements />} />
+          
         </Route>
+        <Route path='achievements' element={<Achievements />} />
         <Route path='adminuser' element={<User/>}/>
         <Route path='addgames' element={<AddGames/>}/>
+        <Route path='calendar' element={<Calendar/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+        
       </Routes>
+      
     </Router>
       
     </>
