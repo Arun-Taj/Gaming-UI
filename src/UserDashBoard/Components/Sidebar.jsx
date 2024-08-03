@@ -8,33 +8,38 @@ import { FiMenu, FiX } from "react-icons/fi";
 const links = [
   {
     id: 1,
-    link: "store",
+    link: "/store",
     icon: <RiHome2Line />,
     Label: "Store",
+    
   },
   {
     id: 2,
-    link: "browse",
+    link: "/browse",
     icon: <TbBrowser />,
     Label: "Browse",
+    
   },
   {
     id: 3,
-    link: "library",
+    link: "/library",
     icon: <MdLibraryAdd />,
     Label: "Library",
+    
   },
   {
     id: 4,
-    link: "history",
+    link: "/history",
     icon: <MdHistory />,
     Label: "History",
+    
   },
   {
     id: 5,
-    link: "achievements",
+    link: "/achievements",
     icon: <MdSendAndArchive />,
     Label: "Achievements",
+    
   },
 ];
 
@@ -46,12 +51,12 @@ const games = [
   { name: 'Fortnite', image: 'src/assetsUserDashBoard/Fortnite.jpeg' },
 ];
 
-const Sidebar = ({ isOpen, toggleSidebar }) => {
+const Sidebar = ({ isOpen, toggleSidebar, setActiveComponent}) => {
   
 
   return (
     <>
-      <div className="md:hidden   p-4 pt-8 ">
+      <div className="md:hidden   p-4 pt-8 cursor-pointer z-50">
         <button onClick={toggleSidebar}>
           {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
@@ -62,7 +67,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           {links.map(({ id, link, icon, Label }) => (
             <li key={id} className="mb-4 flex items-center space-x-2">
               {icon}
-              <Link to={link} onClick={toggleSidebar}>{Label}</Link>
+              <Link to={link} onClick={toggleSidebar} >{Label}</Link>
             </li>
           ))}
         </ul>

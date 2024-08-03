@@ -14,7 +14,7 @@ import History from './UserDashBoard/Components/MenuItems/History';
 import AddGames from './AdminDashBoard/Components/AddGames';
 import ErrorPage from './Components/ErrorPage';
 import Calendar from './AdminDashBoard/Components/Calendar';
-import Sidebar from './UserDashBoard/Components/Sidebar';
+// import Sidebar from './UserDashBoard/Components/Sidebar';
 
 
 
@@ -30,14 +30,8 @@ const App = () => {
       <Routes>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/signin' element={<SignIn/>}/>
-        <Route path='/' element={<DashBoard/>}>
-          <Route path='store' element={<Store />} />
-          <Route path='browse' element={<Browser />} />
-          <Route path='library' element={<Library />} />
-          <Route path='history' element={<History />} />
+        <Route path='/*' element={<DashBoard/>}/>
           
-        </Route>
-        <Route path='achievements' element={<Achievements />} />
         <Route path='adminuser' element={<User/>}/>
         <Route path='addgames' element={<AddGames/>}/>
         <Route path='calendar' element={<Calendar/>}/>

@@ -66,16 +66,22 @@ const Cell = styled.div`
   ${({ isNotSameMonth }) => isNotSameMonth && `
     color: #d1d5db;
   `}
-  ${({ isSelected }) => isSelected && `
+  ${({ isSelected, isCurrentMonth, isToday }) => isSelected && isToday && isCurrentMonth && `
     background-color: #e53e3e;
     color: #fff;
     border-radius: 50%;
+  `}
+  ${({ isToday, isCurrentMonth }) => isToday && !isCurrentMonth && `
+    border: 1px solid #BDC4C4;
+    border-radius: 50%;
+    color: #000;
   `}
 `;
 
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const today = new Date();
 
   const renderHeader = () => {
     return (
@@ -121,11 +127,16 @@ const Calendar = () => {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, 'd');
         const cloneDay = day;
+        const isToday = isSameDay(day, today);
+        const isCurrentMonth = isSameMonth(day, currentMonth);
+
         days.push(
           <Cell
             key={day}
-            isNotSameMonth={!isSameMonth(day, monthStart)}
+            isNotSameMonth={!isCurrentMonth}
             isSelected={isSameDay(day, selectedDate)}
+            isToday={isToday}
+            isCurrentMonth={isSameMonth(currentMonth, today)}
             onClick={() => onDateClick(cloneDay)}
           >
             {formattedDate}

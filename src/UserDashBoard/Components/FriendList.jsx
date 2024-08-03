@@ -17,38 +17,36 @@ const friends = [
 
 const FriendsList = () => {
   return (
-    <div className="dark:bg-gray-800 dark:text-white bg-lightModeBg text-black p-4 sm:pl-6 md:pl-10  ">
-      <div className=''>
-        <p className="text-sm sm:text-xl font-bold mb-6">Online friends</p>
-      
-      
-      <ul>
-        {friends.filter(friend => friend.online).map((friend, index) => (
-          <li key={index} className="mb-4 flex items-center">
-            <img
-              src="src/assetsUserDashBoard/Fc24.jpeg" 
-              alt="Profile"
-              className="w-8 h-8 rounded-full border-gray-300 mr-2"
-            />
-            <span className="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
-            <span className="text-sm sm:text-base">{friend.name}</span>
-          </li>
-        ))}
-      </ul>
-      <p className="text-sm sm:text-xl font-bold mt-6 mb-4">Offline friends</p>
-      <ul>
-        {friends.filter(friend => !friend.online).map((friend, index) => (
-          <li key={index} className="mb-4 flex items-center">
-            <img
-              src="src/assetsUserDashBoard/Fc24.jpeg" 
-              alt="Profile"
-              className="w-8 h-8 rounded-full border-gray-300 mr-2"
-            />
-            <span className="h-3 w-3 bg-red-500 rounded-full mr-2"></span>
-            <span className="text-sm sm:text-base">{friend.name}</span>
-          </li>
-        ))}
-      </ul>
+    <div className="dark:bg-gray-800 dark:text-white bg-lightModeBg text-black p-4 sm:pl-6 md:pl-10">
+      <div>
+        <p className="text-[14px] sm:text-lg  font-bold mb-6">Online friends</p>
+        <ul>
+          {friends.filter(friend => friend.online).map((friend, index) => (
+            <li key={index} className="mb-4 flex items-center">
+              <img
+                src="src/assetsUserDashBoard/Fc24.jpeg" 
+                alt="Profile"
+                className="w-8 h-8 rounded-full border-gray-300 mb-2 hidden sm:block"
+              />
+              <span className="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
+              <span className="text-[10px] sm:text-base">{friend.name}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="text-[14px] sm:text-lg font-bold mt-6 mb-4">Offline friends</p>
+        <ul>
+          {friends.filter(friend => !friend.online).map((friend, index) => (
+            <li key={index} className="mb-4 flex items-center">
+              <img
+                src="src/assetsUserDashBoard/Fc24.jpeg" 
+                alt="Profile"
+                className="w-8 h-8 rounded-full border-gray-300 mb-2 hidden sm:block"
+              />
+              <span className="h-3 w-3 bg-red-500 rounded-full mr-2"></span>
+              <span className="text-[10px] sm:text-base">{friend.name}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

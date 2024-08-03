@@ -1,10 +1,18 @@
 import React from "react";
 
+
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import MainContent from "./MainContent";
+//import MainContent from "./MainContent";
 import FriendsList from "./FriendList";
+import Browser from "./MenuItems/Browser";
+import Store from "./MenuItems/Store";
+import Library from "./MenuItems/Library";
+import History from "./MenuItems/History";
+import Achievements from "./MenuItems/Achievements";
+import { Routes, Route } from "react-router-dom";
+//import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 
 const DashBoard = () => {
@@ -23,12 +31,10 @@ const DashBoard = () => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-    // if (isOpen) {
-    //   document.documentElement.classList.remove(isOpen);
-    // } else {
-    //   document.documentElement.classList.add(isOpen);
-    // }
+   
   };
+  
+
   return (
     <>
    
@@ -39,7 +45,15 @@ const DashBoard = () => {
          
             <Sidebar className="hidden md:block md:w-1/4 lg:w-1/5" isOpen={isOpen} toggleSidebar={toggleSidebar}  />
             <div className="flex-grow sm:w-2/3 md:w-3/4 lg:w-3/5">
-              <MainContent />
+            <Routes>
+                <Route path="/" element={<Store />} /> {/* Default route */}
+                <Route path="/store" element={<Store />} />
+                <Route path="/browse" element={<Browser />} />
+                <Route path="/library" element={<Library />} />
+                <Route path="/history" element={<History />} />
+                <Route path="/achievements" element={<Achievements />} />
+              </Routes>
+              
             </div>
             <FriendsList className="hidden lg:block lg:w-1/5" />
           </div>
