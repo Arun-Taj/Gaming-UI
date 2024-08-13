@@ -26,7 +26,7 @@ const Achievements = () => {
   ];
 
   return (
-    <div className='p-8'>
+    <div className=''>
       <p className='text-2xl font-mono font-bold'> Achievements</p>
       <ul>
         {acheive.map((achievement, index) => (
@@ -37,9 +37,9 @@ const Achievements = () => {
                 alt={achievement.name}
                 className="w-8 h-8 rounded-full border-gray-300"
               />
-              <p className=' font-extrabold'>{achievement.name}</p>
+              <p className=' text-[10px] md:text-lg'>{achievement.name}</p>
             </div>
-            <div className='flex items-center justify-start w-1/2'>
+            <div className='flex items-center justify-start w-1/2 text-[10px] px-3'>
               <p >{achievement.title}</p> 
             </div>
              <FaMedal />

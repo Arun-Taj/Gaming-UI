@@ -5,7 +5,7 @@ import { IoGameController } from "react-icons/io5";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   return (
-    <nav className="dark:bg-gray-800 bg-lightModeBg dark:text-white text-black p-4 flex justify-between items-center ">
+    <nav className="dark:bg-gray-800 sticky bg-lightModeBg dark:text-white text-black p-4 flex justify-between items-center ">
       <IoGameController size={30} className='h-10 mr-4 text-red-500' />
       <div className="flex items-center flex-grow md:flex-grow-0">
         <div className="relative w-full md:w-auto">

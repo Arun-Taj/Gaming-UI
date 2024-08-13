@@ -37,13 +37,19 @@ const DashBoard = () => {
 
   return (
     <>
-   
+    <div className='sticky top-0 z-20 ' >
+    <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode}  />
+
+
+    </div>
+
       <div className={darkMode ? "dark" : ""}>
         <div className="min-h-screen flex flex-col dark:bg-gray-800 bg-lightModeBg dark:text-white text-black">
-          <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-          <div className="flex flex-grow w-full">
-         
-            <Sidebar className="hidden md:block md:w-1/4 lg:w-1/5" isOpen={isOpen} toggleSidebar={toggleSidebar}  />
+          <div className="flex flex-grow w-full">    
+
+            <Sidebar className="hidden md:block md:w-1/4 lg:w-1/5 overflow-y-scroll" isOpen={isOpen} toggleSidebar={toggleSidebar}  />
+
+
             <div className="flex-grow sm:w-2/3 md:w-3/4 lg:w-3/5">
             <Routes>
                 <Route path="/" element={<Store />} /> {/* Default route */}
