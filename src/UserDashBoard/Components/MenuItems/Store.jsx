@@ -10,6 +10,14 @@ import FallGuys from '../../../assetsUserDashBoard/FallGuys.jpeg';
 import NBA2k from '../../../assetsUserDashBoard/NBA2k.jpeg';
 import CollageFootball25 from '../../../assetsUserDashBoard/CollageFootball25.jpeg';
 import FreeFire from '../../../assetsUserDashBoard/FreeFire.jpeg';
+import AmongUs from '../../../assetsUserDashBoard/AmongUs.jpeg';
+import Casino from '../../../assetsUserDashBoard/Casino.jpeg';
+import CttzA5ZT from '../../../assetsUserDashBoard/CttzA5ZT.jpeg';
+import Doom from '../../../assetsUserDashBoard/Doom.jpeg';
+import FarCry from '../../../assetsUserDashBoard/FarCry.jpeg';
+import LolCoverArt from '../../../assetsUserDashBoard/LolCoverArt.jpeg';
+import RedDeadRedumption from '../../../assetsUserDashBoard/RedDeadRedemption.jpeg';
+
 
 const Store = () => {
   const games = [
@@ -21,10 +29,10 @@ const Store = () => {
   ];
   
   const Newgames = [
-    { name: 'Clash Royal', image: ClashOfRoyals2, price: 'Free' },
-    { name: 'Pubg', image: Pubg, price: 'Free' },
-    { name: 'FC 24', image: Fc24, price: 'Free' },
-    { name: 'Fortnite', image: Fortnite, price: 'Free' },
+    { name: 'Red Dead Redumption', image: RedDeadRedumption, price: 'Free' },
+    { name: 'Lol-Cover-Art', image: LolCoverArt  , price: 'Free' },
+    { name: 'Doom', image: Doom, price: 'Free' },
+    { name: 'FarCry4', image: FarCry, price: 'Free' },
     { name: 'Fall Guys', image: FallGuys, price: 'Free' },
     { name: 'NBA 2K', image: NBA2k, price: 'Free' },
     { name: 'College Football 25', image: CollageFootball25, price: 'Free' },
