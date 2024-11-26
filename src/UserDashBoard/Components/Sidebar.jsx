@@ -4,6 +4,15 @@ import { TbBrowser } from "react-icons/tb";
 import { MdLibraryAdd, MdHistory, MdSendAndArchive } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from "react-icons/fi";
+import CollageFootball25 from '../../assetsUserDashBoard/CollageFootball25.jpeg';
+import ClashOfRoyals2 from '../../assetsUserDashBoard/ClashOfRoyals2.jpeg';
+import Pubg from '../../assetsUserDashBoard/Pubg.jpeg';
+import Fc24 from '../../assetsUserDashBoard/Fc24.jpeg';
+import Fortnite from '../../assetsUserDashBoard/Fortnite.jpeg';
+import FallGuys from '../../assetsUserDashBoard/FallGuys.jpeg';
+import NBA2k from '../../assetsUserDashBoard/NBA2k.jpeg';
+import FreeFire from '../../assetsUserDashBoard/FreeFire.jpeg';
+
 
 const links = [
   {
@@ -39,14 +48,14 @@ const links = [
 ];
 
 const games = [
-  { name: 'American Football', image: 'src/assetsUserDashBoard/CollageFootball25.jpeg' },
-  { name: 'Clash Royal', image: 'src/assetsUserDashBoard/ClashOfRoyals2.jpeg' },
-  { name: 'Pubg', image: 'src/assetsUserDashBoard/Pubg.jpeg' },
-  { name: 'Clash Royal', image: 'src/assetsUserDashBoard/ClashOfRoyals2.jpeg' },
-  { name: 'Pubg', image: 'src/assetsUserDashBoard/Pubg.jpeg' },
-  { name: 'FC 24', image: 'src/assetsUserDashBoard/Fc24.jpeg' },
-  { name: 'FC 24', image: 'src/assetsUserDashBoard/Fc24.jpeg' },
-  { name: 'Fortnite', image: 'src/assetsUserDashBoard/Fortnite.jpeg' },
+  { name: 'American Football', image: CollageFootball25 },
+  { name: 'Clash Royal', image: ClashOfRoyals2 },
+  { name: 'Pubg', image: Pubg },
+  { name: 'NBA2K', image: NBA2k },
+  { name: 'FallGuys', image: FallGuys},
+  { name: 'FC 24', image: Fc24 },
+  { name: 'FreeFire', image: FreeFire},
+  { name: 'Fortnite', image: Fortnite },
 ];
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
