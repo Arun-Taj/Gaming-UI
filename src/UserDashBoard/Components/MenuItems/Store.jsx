@@ -2,25 +2,33 @@ import React from 'react';
 import GameCard from '../GameCard';
 import { FaStar } from "react-icons/fa";
 import { FaFirefox } from "react-icons/fa";
+import ClashOfRoyals2 from '../../../assetsUserDashBoard/ClashOfRoyals2.jpeg';
+import Pubg from '../../../assetsUserDashBoard/Pubg.jpeg';
+import Fc24 from '../../../assetsUserDashBoard/Fc24.jpeg';
+import Fortnite from '../../../assetsUserDashBoard/Fortnite.jpeg';
+import FallGuys from '../../../assetsUserDashBoard/FallGuys.jpeg';
+import NBA2k from '../../../assetsUserDashBoard/NBA2k.jpeg';
+import CollageFootball25 from '../../../assetsUserDashBoard/CollageFootball25.jpeg';
+import FreeFire from '../../../assetsUserDashBoard/FreeFire.jpeg';
 
 const Store = () => {
   const games = [
-    { name: 'Clash Royal', image: 'src/assetsUserDashBoard/ClashOfRoyals2.jpeg', price: 'Free' },
-    { name: 'Pubg', image: 'src/assetsUserDashBoard/Pubg.jpeg', price: 'Free' },
-    { name: 'FC 24', image: 'src/assetsUserDashBoard/Fc24.jpeg', price: 'Free' },
-    { name: 'Fortnite', image: 'src/assetsUserDashBoard/Fortnite.jpeg', price: 'Free' },
+    { name: 'Clash Royal', image: ClashOfRoyals2, price: 'Free' },
+    { name: 'Pubg', image: Pubg, price: 'Free' },
+    { name: 'FC 24', image: Fc24, price: 'Free' },
+    { name: 'Fortnite', image: Fortnite, price: 'Free' },
     
   ];
   
   const Newgames = [
-    { name: 'Clash Royal', image: 'src/assetsUserDashBoard/ClashOfRoyals2.jpeg', price: 'Free' },
-    { name: 'Pubg', image: 'src/assetsUserDashBoard/Pubg.jpeg', price: 'Free' },
-    { name: 'FC 24', image: 'src/assetsUserDashBoard/Fc24.jpeg', price: 'Free' },
-    { name: 'Fortnite', image: 'src/assetsUserDashBoard/Fortnite.jpeg', price: 'Free' },
-    { name: 'Fall Guys', image: 'src/assetsUserDashBoard/FallGuys.jpeg', price: 'Free' },
-    { name: 'NBA 2K', image: 'src/assetsUserDashBoard/NBA2k.jpeg', price: 'Free' },
-    { name: 'College Football 25', image: 'src/assetsUserDashBoard/CollageFootball25.jpeg', price: 'Free' },
-    { name: 'Free Fire', image: 'src/assetsUserDashBoard/FreeFire.jpeg', price: 'Free' },
+    { name: 'Clash Royal', image: ClashOfRoyals2, price: 'Free' },
+    { name: 'Pubg', image: Pubg, price: 'Free' },
+    { name: 'FC 24', image: Fc24, price: 'Free' },
+    { name: 'Fortnite', image: Fortnite, price: 'Free' },
+    { name: 'Fall Guys', image: FallGuys, price: 'Free' },
+    { name: 'NBA 2K', image: NBA2k, price: 'Free' },
+    { name: 'College Football 25', image: CollageFootball25, price: 'Free' },
+    { name: 'Free Fire', image: FreeFire, price: 'Free' },
   ];
 
   return (
