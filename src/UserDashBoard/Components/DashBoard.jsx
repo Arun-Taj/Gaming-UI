@@ -12,6 +12,9 @@ import Library from "./MenuItems/Library";
 import History from "./MenuItems/History";
 import Achievements from "./MenuItems/Achievements";
 import { Routes, Route } from "react-router-dom";
+import NotificationDropdown from "./Notification";
+import Profile from "./Profile/Profile";
+import AccountSetting from "./Profile/AccountSetting";
 //import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 
@@ -52,12 +55,16 @@ const DashBoard = () => {
 
             <div className="flex-grow sm:w-2/3 md:w-3/4 lg:w-3/5">
             <Routes>
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/accountSetting" element={<AccountSetting />} />
                 <Route path="/" element={<Store />} /> {/* Default route */}
                 <Route path="/store" element={<Store />} />
                 <Route path="/browse" element={<Browser />} />
                 <Route path="/library" element={<Library />} />
                 <Route path="/history" element={<History />} />
                 <Route path="/achievements" element={<Achievements />} />
+
+
               </Routes>
               
             </div>

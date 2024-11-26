@@ -84,9 +84,7 @@ const SignUp = () => {
       localStorage.setItem("id",JSON.stringify(formValues));
       navigate("/signin")
       
-      // Reset form to initial values
-      // setFormValues(initialFormValues);
-      // setTermsAccepted(false);
+      
     }
   };
   const formFields = [
