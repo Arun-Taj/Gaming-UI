@@ -13,9 +13,9 @@ const ProfileDropDown = ({ isOpen }) => {
 
 
   const handleLogOut = () => {
-    logout();
+    // logout();
     //navigate to login page
-    navigate("/");
+    navigate("/signin");
   }
 
 

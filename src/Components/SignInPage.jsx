@@ -3,6 +3,7 @@ import { IoGameController } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import Astro2 from "../assets/Astro2.jpeg";
 
 const SignIn = () => {
   const initialFormValues = {
@@ -53,7 +54,7 @@ const SignIn = () => {
       <div className="relative w-full md:w-96">
         {/* Background Image */}
         <img
-          src="src/assets/Astro2.jpeg"
+          src={Astro2}
           className="w-full h-full rounded-2xl"
           alt="Astronaut"
         />
@@ -115,7 +116,7 @@ const SignIn = () => {
             <div className="mt-4 pb-6 flex items-center">
               <p>
                 Don't have an account?
-                <button type="button" className="cursor-pointer text-blue-600" onClick={handleSignUpClick}>
+                <button type="button" className="cursor-pointer text-blue-600 font-extrabold" onClick={handleSignUpClick}>
                   Sign Up
                 </button>
               </p>
